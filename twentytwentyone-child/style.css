@@ -12,5 +12,22 @@ Tags:         responsive-layout, accessibility-ready
 Text Domain:  twentytwentyone-child
 */
  body {
-    background-color: #bf3939;
+    background-color: #c04456;
+ }
+
+ /* form elements styling */
+ input[type=text], input[type=email], input[type=url], input[type=password], input[type=search], input[type=number], input[type=tel], input[type=date], input[type=month], input[type=week], input[type=time], input[type=datetime], input[type=datetime-local], input[type=color], .site textarea {
+    border-radius: 5px;
+ }
+ button {
+    border-radius: 5px;
+    margin-top: 5px;
+ }
+
+ /* primary navigation */
+ .primary-navigation-open .menu-button-container {
+    background-color: #c04456;
+ }
+ .primary-navigation > .primary-menu-container {
+    background-color: #5bae74;
  }
