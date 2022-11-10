@@ -12,49 +12,81 @@ Tags:         responsive-layout, accessibility-ready
 Text Domain:  twentytwentyone-child
 */
  body {
-    background-color: #8ece96;
+    background-color: #274b2c;
+    color: #fff;
  }
-
+/* .header-parent {
+    width: 100%;
+    top: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.169), rgba(0, 0, 0, 0));
+} */
  #page {
     background-image: url("img/color-pattern.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-blend-mode: darken;
  }
+
  /* top menu and text */
- .site-title {
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.2;
+ .site-title, .site-description {
     margin: 0;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 0 0 10px #000;
  }
+ .site-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+ }
  .site-description {
-    color: #fff;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    margin: 0;
-    text-align: center;
+ }
+ .entry-title a, .entry-title a:hover {
     text-shadow: 0 0 10px #000;
  }
 
- /* form elements styling */
- input[type=text], input[type=email], input[type=url], input[type=password], input[type=search], input[type=number], input[type=tel], input[type=date], input[type=month], input[type=week], input[type=time], input[type=datetime], input[type=datetime-local], input[type=color], .site textarea {
+ .menu-button-container #primary-mobile-menu {
+    background-color: rgba(20, 102, 17, 0.5);
+    border-radius: 0;
+    border: 0;
+    box-shadow: 0 0 10px #000;
+ }
+
+ /* primary navigation */
+ .primary-navigation-open .menu-button-container {
+    background-color: #274b2c;
+ }
+ .primary-navigation > .primary-menu-container {
+    background-color: rgba(20, 102, 17, 0.5);
+ }
+
+ /* promary navigation when the menu is open on mobile screen devices */
+ @media only screen and (max-width: 481px) {
+    .primary-navigation > .primary-menu-container {
+        background-color: #274b2c;
+        background-image: url("img/red-pattern.png");
+        background-size: 125%;
+        background-repeat: no-repeat;
+    }
+ }
+
+/* form elements styling */
+input[type=text], input[type=email], input[type=url], input[type=password], input[type=search], input[type=number], input[type=tel], input[type=date], input[type=month], input[type=week], input[type=time], input[type=datetime], input[type=datetime-local], input[type=color], .site textarea {
     border-radius: 5px;
  }
  button {
     border-radius: 5px;
     margin-top: 5px;
  }
-
- /* primary navigation */
- .primary-navigation-open .menu-button-container {
-    background-color: #c04456;
+ button:not(:hover):not(:active):not(.has-background) {
+    color: #274b2c;
  }
- .primary-navigation > .primary-menu-container {
-    background-color: #5bae74;
+
+
+ /* root */
+ :root {
+    --global--color-primary: #fff;
  }

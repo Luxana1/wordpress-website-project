@@ -1,3 +1,12 @@
+// Path: twentytwentyone-child\js\script.js
+
+// create a parent div for <header>
+// const header = document.querySelector('header');
+// const headerParent = document.createElement('div');
+// headerParent.classList.add('header-parent');
+// headerParent.appendChild(header);
+// document.body.insertBefore(headerParent, document.body.firstChild);
+
 // form validation
 // variables
 const nameError = document.getElementById("name-error");
