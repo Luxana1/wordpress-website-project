@@ -44,7 +44,8 @@ Text Domain:  twentytwentyone-child
     font-weight: 400;
     line-height: 1.5;
  }
- .entry-title a, .entry-title a:hover {
+ /* styling for every page title */
+ .entry-title a, .entry-title a:hover, .entry-header {
     text-shadow: 0 0 10px #000;
  }
 
@@ -73,8 +74,49 @@ Text Domain:  twentytwentyone-child
     }
  }
 
-/* form elements styling */
-input[type=text], input[type=email], input[type=url], input[type=password], input[type=search], input[type=number], input[type=tel], input[type=date], input[type=month], input[type=week], input[type=time], input[type=datetime], input[type=datetime-local], input[type=color], .site textarea {
+/* contact form and form elements styling */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    max-width: 576px;
+    margin: 0% auto;
+}
+
+.input-group {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+form input:focus {
+    outline: none;
+}   
+label {
+    display: block;
+}
+.asterisk {
+    color: red;
+    font-size: 20px;
+    display: contents;
+}
+.hide {
+    opacity: 0;
+} 
+input[type=text], input[type=email], .site textarea {
+    margin-bottom: 15px;
+    flex-basis: 100%;
+    outline: 0;
+    font-size: 0.9rem;
+}
+#success-message {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input[type=text], input[type=email], input[type=url], input[type=password], .site textarea {
     border-radius: 5px;
  }
  button {
@@ -83,6 +125,12 @@ input[type=text], input[type=email], input[type=url], input[type=password], inpu
  }
  button:not(:hover):not(:active):not(.has-background) {
     color: #274b2c;
+ }
+ /* error messages */
+ #name-error {
+    color: red;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
  }
 
 
