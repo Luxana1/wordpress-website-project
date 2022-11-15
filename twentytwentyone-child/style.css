@@ -118,6 +118,7 @@ input[type=text], input[type=email], .site textarea {
 
 input[type=text], input[type=email], input[type=url], input[type=password], .site textarea {
     border-radius: 5px;
+    width: 100%;
  }
  button {
     border-radius: 5px;
@@ -131,6 +132,12 @@ input[type=text], input[type=email], input[type=url], input[type=password], .sit
     color: red;
     font-size: 0.8rem;
     margin-bottom: 10px;
+ }
+
+ /* comment submit button */
+ input[type=submit]:not(:hover):not(:active):not(.has-background) {
+    color: #274b2c;
+    border-radius: 5px;
  }
 
 
