@@ -140,6 +140,17 @@ input[type=text], input[type=email], input[type=url], input[type=password], .sit
     border-radius: 5px;
  }
 
+/* gallery block column images description on the bottom */
+@media only screen and (min-width: 822px) {
+   .wp-block-columns .wp-block-column:not(:last-child) {
+      margin-right: 40px;
+   }
+}
+
+/* gallery information block ath the bottom "need help?" */
+.wp-block-cover:not([class*=background-color]) .wp-block-cover__inner-container {
+   color: #274b2c;
+}
 
  /* root */
  :root {
